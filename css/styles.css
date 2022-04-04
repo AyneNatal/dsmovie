@@ -54,7 +54,54 @@ a, a:hover {
 }
 
 #dsmovie-card-list {
-    padding: 40px 12px;
+    padding: 0px 12px;
+}
+
+.dsmovie-pagination-container {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.dsmovie-pagination-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.dsmovie-pagination-box p{
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.dsmovie-pagination-box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--color-white);
+}
+
+.dsmovie-pagination-box button:disabled {
+    border: 2px solid #AAA;
+}
+
+.dsmovie-pagination-box button img{
+    filter: brightness(0) invert(21%) sepia(63%) saturate(3246%) hue-rotate(239deg) brightness(90%) contrast(84%);
+}
+
+.dsmovie-pagination-box button:disabled img{
+    filter: unset;
+}
+
+.dsmovie-flip {
+    transform: rotate(180deg);
 }
 
 .dsmovie-card {
